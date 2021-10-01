@@ -69,20 +69,23 @@ body {
     grid-area: laranja;
     background-color: rgba(0, 0, 0, 0);
     border-top-right-radius: 100%;
+    overflow: hidden;
 }
 
 .brown2 {
     grid-area: marrom;
     background-color: rgba(0, 0, 0, 0);
     border-bottom-left-radius: 100%;
+    overflow: hidden;
 }
 
 .green2 {
     grid-area: verde;
     background-color: rgba(0, 0, 0, 0);
     border-bottom-right-radius: 100%;
+    overflow: hidden;
 }
 
 .selected {
-    opacity: 0.8;
+    opacity: 0.4;
 }
