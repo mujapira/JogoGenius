@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background: rgb(223, 194, 163);
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .cards {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(184, 170, 159);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .cards .imgBxCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 10;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.container .cards:hover .imgBxCard {
+    transform: translateY(20px) scale(0.6);
+}
+
+.container .cards .imgBxCard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .cards .contentcard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.container .cards:hover .contentcard {
+    transform: translateY(0);
+}
+
+.container .cards .contentcard .detailscard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .cards .contentcard .detailscard h2 {
+    color: rgb(92, 78, 70);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.container .cards .contentcard .detailscard h2 span {
+    color: rgb(92, 78, 70);
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.social_icons {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+    margin-left: -19%;
+}
+
+.social_icons li {
+    list-style: none;
+    margin: 4px;
+}
+
+.social_icons li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d0f1b;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: rgb(201, 120, 120);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social_icons li a:hover {
+    transform: rotate(360deg);
+}

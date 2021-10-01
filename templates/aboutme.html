@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" type="text/css" href="/styles/global.css">
+    <link rel="stylesheet" type="text/css" href="/styles/aboutme.css">
+    <script src="https://kit.fontawesome.com/475e944a02.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>JOGO<span>GENIUS</span></h1>
+            </div>
+            <ul class="navigation">
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutme.php">Sobre mim</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="aboutme">
+        <div class="container">
+            <div class="cards">
+                <div class="imgBxCard">
+                    <img src="/images/mauricio.jpg">
+                </div>
+                <div class="contentcard">
+                    <div class="detailscard">
+                        <h2>Maurício <br></b><span>Web Developer</span></h2>
+                        <ul class="social_icons">
+                            <li><a href="https://www.instagram.com/maauricio_mp/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://wa.me/5511973202219" target="_blank"><i class="fa fa-whatsapp"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/mujapira" target="_blank">
+                                    <i class="fab fa-github"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+
+    const fotos = document.querySelectorAll(".box");
+    fotos.forEach(foto => {
+        foto.addEventListener("mouseover", function () {
+            foto.classList.add("active");
+        })
+    });
+</script>
+
+</html>
