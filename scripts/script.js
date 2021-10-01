@@ -4,14 +4,14 @@
 //rgb(201, 120, 120)
 //rgb(184, 170, 159)
 
-let order = [];
-let clickedOrder = [];
-let score = 0;
-
 //0-green
 //1-orange
 //2-brown
 //3-blue
+
+let order = [];
+let clickedOrder = [];
+let score = 0;
 
 const blue = document.querySelector('.blue2');
 const orange = document.querySelector('.orange2');
@@ -33,10 +33,10 @@ let lightColor = (element, number) => {
     number = number * 500;
     setTimeout(() => {
         element.classList.add('selected');
-    }, number - 250);
+    }, number);
     setTimeout(() => {
         element.classList.remove('selected');
-    });
+    }, number);
 }
 
 let checkOrder = () => {
@@ -53,22 +53,22 @@ let checkOrder = () => {
 }
 
 let click = (color) => {
-    clickedOrder(clickedOrder.length) = color;
+    clickedOrder[clickedOrder.length] = color;
     createColorElement(color).classList.add('selected');
 
     setTimeout(() => {
         createColorElement(color).classList.remove('selected');
         checkOrder();
-    },250);
+    }, 250);
 
 }
 
-let createColorElement = () => {
+let createColorElement = (color) => {
     if (color == 0) {
         return green;
     } else if (color == 1) {
         return orange;
-    } else if (coloer == 2) {
+    } else if (color == 2) {
         return brown;
     } else if (color == 3) {
         return blue;
@@ -83,7 +83,7 @@ let nextLevel = () => {
 let gameOver = () => {
     alert(`Pontuação: ${score}!\nVocê perdeu!\nClique em OK para reinicar!`)
     order = [];
-    clickedOrder[];
+    clickedOrder = [];
 
     playGame();
 }
