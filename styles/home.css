@@ -1,6 +1,9 @@
 body {
     margin: 0;
     background: rgb(223, 194, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-game {
@@ -13,40 +16,73 @@ body {
 
 .genius {
     display: grid;
-    grid-template-areas: 'topleft toprigh' 'bottomleft bottomrigt';
+    grid-template-areas: 'azul laranja' 'marrom verde';
     grid-gap: 10px;
     border: 1px rgb(92, 78, 70);
     background-color: rgb(92, 78, 70);
     border-radius: 100%;
-    margin-top: none;
     width: 50vw;
     height: 50vw;
-    border-radius: 50%;
-    display: wrap;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
 
-.blue img {
+.genius img {
+    width: 100%;
+}
+
+.blue {
     grid-area: azul;
     border-top-left-radius: 100%;
-    width: 300px;
+    width: calc(25vw - 5px);
+    overflow: hidden;
 }
 
-.orange img {
+.orange {
     grid-area: laranja;
     border-top-right-radius: 100%;
-    width: 300px;
+    width: calc(25vw - 5px);
+    overflow: hidden;
 }
 
-.brown img {
+.brown {
     grid-area: marrom;
     border-bottom-left-radius: 100%;
-    width: 300px;
+    width: calc(25vw - 5px);
+    overflow: hidden;
 }
 
-.green img {
+.green {
     grid-area: verde;
     border-bottom-right-radius: 100%;
-    width: 300px;
+    width: calc(25vw - 5px);
+    overflow: hidden;
+}
+
+.blue2 {
+    grid-area: azul;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 100%;
+    overflow: hidden;
+}
+
+.orange2 {
+    grid-area: laranja;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-right-radius: 100%;
+}
+
+.brown2 {
+    grid-area: marrom;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 100%;
+}
+
+.green2 {
+    grid-area: verde;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-right-radius: 100%;
+}
+
+.selected {
+    opacity: 0.8;
 }
