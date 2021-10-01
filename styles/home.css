@@ -1,13 +1,12 @@
 body {
     margin: 0;
     background: rgb(223, 194, 163);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .main-game {
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -21,8 +20,8 @@ body {
     border: 1px rgb(92, 78, 70);
     background-color: rgb(92, 78, 70);
     border-radius: 100%;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 40vw;
     padding: 10px;
 }
 
@@ -33,28 +32,28 @@ body {
 .blue {
     grid-area: azul;
     border-top-left-radius: 100%;
-    width: calc(25vw - 5px);
+    width: calc(20vw - 5px);
     overflow: hidden;
 }
 
 .orange {
     grid-area: laranja;
     border-top-right-radius: 100%;
-    width: calc(25vw - 5px);
+    width: calc(20vw - 5px);
     overflow: hidden;
 }
 
 .brown {
     grid-area: marrom;
     border-bottom-left-radius: 100%;
-    width: calc(25vw - 5px);
+    width: calc(20vw - 5px);
     overflow: hidden;
 }
 
 .green {
     grid-area: verde;
     border-bottom-right-radius: 100%;
-    width: calc(25vw - 5px);
+    width: calc(20vw - 5px);
     overflow: hidden;
 }
 

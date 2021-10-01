@@ -36,7 +36,7 @@ let lightColor = (element, number) => {
     }, number);
     setTimeout(() => {
         element.classList.remove('selected');
-    }, number);
+    }, number + 200);
 }
 
 let checkOrder = () => {
@@ -95,14 +95,14 @@ let playGame = () => {
     nextLevel();
 }
 
-green.addEventListener('click', click(0));
-orange.addEventListener('click', click(1));
-brown.addEventListener('click', click(2));
-blue.addEventListener('click', click(3));
-
 green.onclick = () => click(0);
 orange.onclick = () => click(1);
 brown.onclick = () => click(2);
 blue.onclick = () => click(3);
 
-playGame()
+green.addEventListener('click', click(0));
+orange.addEventListener('click', click(1));
+brown.addEventListener('click', click(2));
+blue.addEventListener('click', click(3));
+
+playGame();
