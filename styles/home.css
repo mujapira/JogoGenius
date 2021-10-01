@@ -19,7 +19,34 @@ body {
     background-color: rgb(92, 78, 70);
     border-radius: 100%;
     margin-top: none;
-    width: 30vw;
-    height: 30vw;
+    width: 50vw;
+    height: 50vw;
     border-radius: 50%;
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue img {
+    grid-area: azul;
+    border-top-left-radius: 100%;
+    width: 300px;
+}
+
+.orange img {
+    grid-area: laranja;
+    border-top-right-radius: 100%;
+    width: 300px;
+}
+
+.brown img {
+    grid-area: marrom;
+    border-bottom-left-radius: 100%;
+    width: 300px;
+}
+
+.green img {
+    grid-area: verde;
+    border-bottom-right-radius: 100%;
+    width: 300px;
 }
